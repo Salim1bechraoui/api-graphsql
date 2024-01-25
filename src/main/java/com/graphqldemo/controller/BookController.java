@@ -23,7 +23,6 @@ public class BookController {
 public Author author(Book book) {
     log.info("Quering the Author data for parent book");
     return Author.getById(book.getAuthorId()) ;
-
 }
 @SchemaMapping
 public AuthorContactDetails contact(Author author) {
